@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/write_shape">
+    <TextView
+        android:id="@+id/tvToastOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/articleTitle"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="每日签到可以获得10个积分，"/>
+    <TextView
+        android:layout_below="@+id/tvToastOne"
+        android:id="@+id/TextViewInfo"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="积分可以兑换相应的奖励"
+        android:drawableRight="@mipmap/liwu"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/articleTitle"
+        android:textSize="14sp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

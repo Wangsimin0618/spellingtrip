@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvShareTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="朋友圈"
+            android:drawableTop="@mipmap/timeline"
+            android:textSize="13sp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text58" />
+        <TextView
+            android:id="@+id/tvShareSeen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="微信好友"
+            android:textSize="13sp"
+            android:drawableTop="@mipmap/seen"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text58" />
+        <TextView
+            android:id="@+id/tvShareWeiBo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="微博"
+            android:textSize="13sp"
+            android:drawableTop="@mipmap/weibo"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text58" />
+        <TextView
+            android:id="@+id/tvShareQQ"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="QQ"
+            android:textSize="13sp"
+            android:drawableTop="@mipmap/qq"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text58" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvShareZQne"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="QQ空间"
+            android:textSize="13sp"
+            android:drawableTop="@mipmap/qqzqne"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text58" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+          />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

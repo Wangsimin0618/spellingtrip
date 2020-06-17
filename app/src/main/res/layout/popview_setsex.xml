@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:paddingTop="23dp">
+
+    <TextView
+        android:id="@+id/tvSetSexCannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:text="取消"
+        android:textColor="@color/text58"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvSetSexYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:text="确定"
+        android:textColor="@color/history_text"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSetSexCannel"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvChooseNv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="女"
+            android:textSize="19sp"
+            android:textColor="@color/history_text"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/gril" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/textDC"/>
+        <TextView
+            android:id="@+id/tvChooseBoy"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="男"
+            android:textSize="19sp"
+            android:textColor="@color/history_text"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/boy" />
+    </LinearLayout>
+</RelativeLayout>

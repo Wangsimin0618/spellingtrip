@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/llTopPin"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_bg"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout style="@style/ToPinMenuLoactionStyle">
+                        <TextView
+                            style="@style/WidHHightWraStyle"
+                            android:text="始发地"
+                            android:textColor="@color/text40"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvStartLoaction"
+                            style="@style/WidHHightWraStyle"
+                            android:layout_marginTop="5dp"
+                            android:text="不限"
+                            android:textColor="@color/history_text"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ToPinMenuLoactionStyle">
+
+                        <TextView
+                            style="@style/WidHHightWraStyle"
+                            android:text="目的地"
+                            android:textColor="@color/text40"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvEndLoaction"
+                            style="@style/WidHHightWraStyle"
+                            android:layout_marginTop="5dp"
+                            android:text="不限"
+                            android:textColor="@color/history_text"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tvTopTime"
+                        style="@style/WidHHightWraStyle"
+                        android:text="时间范围" />
+
+                    <TextView
+                        android:id="@+id/tvChooseStartTime"
+                        style="@style/TopinChooseStyle"
+                        android:layout_below="@+id/tvTopTime"
+                        android:text="请选择起始时间"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvNumDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvChooseStartTime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textb3"
+                        android:text="共计0天"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSex"
+                        style="@style/WidHHightWraStyle"
+                        android:layout_below="@+id/tvNumDay"
+                        android:layout_marginTop="15dp"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/tvChooseSex"
+                        style="@style/TopinChooseStyle"
+                        android:layout_below="@+id/tvSex"
+                        android:text="不限" />
+
+                    <TextView
+                        android:id="@+id/tvArg"
+                        style="@style/WidHHightWraStyle"
+                        android:layout_below="@+id/tvChooseSex"
+                        android:layout_marginTop="15dp"
+                        android:text="年龄范围" />
+
+                    <TextView
+                        android:id="@+id/tvChooseArg"
+                        style="@style/TopinChooseStyle"
+                        android:layout_below="@+id/tvArg"
+                        android:text="不限" />
+
+                    <TextView
+                        android:id="@+id/tvNum"
+                        style="@style/WidHHightWraStyle"
+                        android:layout_below="@+id/tvChooseArg"
+                        android:layout_marginTop="15dp"
+                        android:text="需求人数" />
+
+                    <TextView
+                        android:id="@+id/tvChooseNum"
+                        style="@style/TopinChooseStyle"
+                        android:layout_below="@+id/tvNum"
+                        android:layout_marginBottom="20dp"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/tvXingCheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvChooseNum"
+                        android:text="同时公布行程"
+                        android:textColor="@color/articleTitle"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/topInCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvChooseNum"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tvXingCheng"
+                        android:background="@mipmap/xingchengnor"
+                        android:button="@null" />
+
+                    <EditText
+                        android:id="@+id/etToPinDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/topInCheckBox"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/topin_shape"
+                        android:gravity="start"
+                        android:visibility="gone"
+                        android:hint="添加描述"
+                        android:padding="10dp"
+                        android:textColor="@color/text7e"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivTOPiPei"
+               android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/pipei" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

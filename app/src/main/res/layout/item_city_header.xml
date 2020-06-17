@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="热门城市"
+        android:textColor="#848C99" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp">
+
+        <com.spellingtrip.example.view.ScrollGridView
+            android:id="@+id/item_header_city_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:columnWidth="60dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:horizontalSpacing="15dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"></com.spellingtrip.example.view.ScrollGridView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAdapterLabel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/tab_hong"
+    android:layout_marginTop="10px"
+    android:layout_marginRight="10px">
+
+    <TextView
+        android:id="@+id/tvAdapterLabelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main_bg"
+        android:textSize="23px" />
+</RelativeLayout>

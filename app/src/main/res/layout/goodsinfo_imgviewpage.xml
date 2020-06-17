@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_goodsinfopager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/history_text">
+
+        <com.spellingtrip.example.view.HackyViewPager
+            android:id="@+id/vp_goodspager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </com.spellingtrip.example.view.HackyViewPager>
+
+
+        <TextView
+            android:id="@+id/main_lineargoodsinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="90px"
+            android:textColor="@color/main_bg"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+</LinearLayout>

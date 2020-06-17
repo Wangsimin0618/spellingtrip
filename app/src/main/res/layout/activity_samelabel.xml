@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SameLabelActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sameSetLabel"
+        android:layout_below="@+id/gvChooseLabel"
+        android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="70dp"
+        android:background="#F1F4F6"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/comment_title" />
+        <TextView
+            android:id="@+id/tvSetLabelFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

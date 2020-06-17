@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCardItemAA"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/tvCardActivityWeiZhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/ivWeizhi"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="aaaaaa"
+        android:textStyle="bold"
+        android:textColor="@color/history_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvCardActivityTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:text="1111111111"
+        android:textStyle="bold"
+        android:textColor="@color/history_text"
+        android:textSize="15sp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tvCardActivityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="17dp"/>
+
+
+    <TextView
+        android:id="@+id/tvCardActivityContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textColor="@color/text79"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivCardActivityImg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/text5f6" />
+</LinearLayout>

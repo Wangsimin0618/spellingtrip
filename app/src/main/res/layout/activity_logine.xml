@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="17dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="43dp">
+        <TextView
+            android:id="@+id/tvPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录后更精彩"
+            android:textColor="@color/history_text"
+            android:textSize="29sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPass"
+            android:layout_marginTop="10dp"
+            android:text="拼旅行，给你不一样的旅行体验"
+            android:textColor="@color/history_text"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/loginnor_shape"
+            android:layout_above="@+id/etPassWrod">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+86"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="19dp"
+                android:textColor="@color/history_text"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="@color/textabc0c"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/etUserPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/textedf1"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:textColor="@color/history_text"
+                android:textColorHint="@color/textabc0c"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPassWrod"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+           android:layout_above="@+id/tvPassLink"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginnor_shape"
+            android:hint="输入密码"
+            android:paddingLeft="27dp"
+            android:visibility="gone"
+            android:password="true"
+            android:textColor="@color/history_text"
+            android:textColorHint="@color/textabc0c"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tvPassLink"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:background="@color/textDC"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/tvLogineSel"
+            style="@style/LogineShapeStyle"
+            android:text="下一步"
+            android:textSize="18sp"
+            android:textColor="@color/textabc0c"
+            android:layout_below="@+id/tvPassLink"
+            android:background="@drawable/loginnor_shape" />
+        <RelativeLayout
+            android:layout_below="@+id/tvLogineSel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvYanPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="验证码登录"
+                android:visibility="gone"
+                android:textColor="@color/text68"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvZhangPassWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="账号密码登录"
+                android:textColor="@color/text68"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvLogineWangPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="忘记密码?"
+                android:visibility="gone"
+                android:textColor="@color/text68"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="“人生若只如初见、我还在这里等你;”"
+                android:textColor="@color/textabc0c"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="没有账号...点击注册"
+                android:textColor="@color/phoneSel_text"
+                android:textSize="13sp"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="我已阅读并同意"
+                    android:textColor="@color/text40"/>
+                <TextView
+                    android:id="@+id/tvLogineYinSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="拼旅行用户协议和隐私政策"
+                    android:textColor="@color/text68"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

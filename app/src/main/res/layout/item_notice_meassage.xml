@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rlItemMeassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <com.spellingtrip.example.view.ShapedImageView
+            android:id="@+id/ivItemMeassageImge"
+            app:shape_mode="circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_40" />
+
+        <TextView
+            android:id="@+id/tvItemMeassageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/ivItemMeassageImge"
+            android:gravity="center_vertical"
+            android:text="sadsadsad"
+            android:textColor="@color/articleTitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvItemMeassageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemMeassageTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivItemMeassageImge"
+            android:gravity="center_vertical"
+            android:text="sdsdsad"
+            android:textColor="@color/text79"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tvItemMeassagetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text79"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/searchbg"/>
+</LinearLayout>

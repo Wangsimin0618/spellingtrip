@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="spellingpinlv"></dbname>
+    <version value="5"></version>
+    <list>
+        <mapping class="com.spellingtrip.example.bean.UserBean"></mapping>
+        <mapping class="com.spellingtrip.example.bean.DataBean"></mapping>
+        <mapping class="com.spellingtrip.example.bean.UserInfoBean"></mapping>
+        <mapping class="com.spellingtrip.example.bean.UserInfoDataBean"></mapping>
+    </list>
+    <storage value="external" />
+</litepal>

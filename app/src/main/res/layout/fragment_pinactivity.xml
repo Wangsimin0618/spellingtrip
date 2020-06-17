@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_bg"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:focusableInTouchMode="true">
+            <RelativeLayout
+                android:id="@+id/rlChoosePinTime"
+                android:layout_marginTop="30dp"
+                style="@style/ComActivityRL">
+
+                <TextView
+                    android:id="@+id/tvPinTime"
+                    style="@style/ComActivityLeft"
+                    android:text="时间：" />
+
+                <TextView
+                    android:id="@+id/rlPinTime"
+                    style="@style/ComActivityRight"
+                    android:text="选择起始时间"
+                    android:layout_toRightOf="@+id/tvPinTime" />
+
+                <ImageView
+                    style="@style/ComActivityImg"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvChooseEndTime"
+                android:layout_below="@+id/rlPinTime"
+                style="@style/ComActivityRight"
+                android:gravity="center"
+                android:layout_marginLeft="48dp"
+                android:layout_height="37dp"
+                android:paddingRight="5dp"
+                android:drawableRight="@mipmap/pin_right"
+                android:layout_marginTop="10dp"
+                android:text="选择结束时间"
+                />
+            <TextView
+                android:id="@+id/tvZongtime"
+                android:textSize="13sp"
+                android:text=""
+                android:textColor="@color/textb3"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvPinLocation"
+                    style="@style/ComActivityLeft"
+                    android:text="地点：" />
+
+                <TextView
+                    android:id="@+id/rlPinLocation"
+                    style="@style/ComActivityRight"
+                    android:text="选择地点"
+                    android:layout_toRightOf="@+id/tvPinLocation" />
+                <ImageView
+                    style="@style/ComActivityImg"
+                    android:src="@mipmap/pin_biaoji"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvPinActivity"
+                    style="@style/ComActivityLeft"
+                    android:text="活动：" />
+
+                <TextView
+                    android:id="@+id/rlPinActivity"
+                    style="@style/ComActivityRight"
+                    android:text="选择活动"
+                    android:layout_toRightOf="@+id/tvPinActivity" />
+                <ImageView
+                    style="@style/ComActivityImg"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvPinPeople"
+                    style="@style/ComActivityLeft"
+                    android:text="人数：" />
+
+                <TextView
+                    android:id="@+id/rlPinPeople"
+                    style="@style/ComActivityRight"
+                    android:text="选择人数"
+                    android:layout_toRightOf="@+id/tvPinPeople" />
+                <ImageView
+                    style="@style/ComActivityImg"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvPinMoney"
+                    style="@style/ComActivityLeft"
+                    android:text="花费：" />
+
+                <EditText
+                    android:id="@+id/etPinMoney"
+                    style="@style/ComActivityRight"
+                    android:hint="设置花费"
+                    android:inputType="number"
+                    android:textColor="@color/history_text"
+                    android:textColorHint="@color/history_text"
+                    android:layout_toRightOf="@+id/tvPinMoney" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/tvPinJieType"
+                    style="@style/ComActivityLeft"
+                    android:text="结算方式：" />
+
+                <RadioGroup
+                    android:id="@+id/pinRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tvPinJieType"
+                    android:background="@color/main_bg"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pinRadioButtonAA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="线下AA"
+                        android:checked="true"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/pinRadioButtonPles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="我请客"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/etPinDesc"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="请尽量丰富描述您的活动内容及行程"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:padding="5dp"
+                android:maxLength="300"
+                android:textColorHint="@color/search_text"
+                android:background="@drawable/topin_shape"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/pinRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/ivPinPublish"
+                android:layout_width="150dp"
+                android:layout_marginBottom="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/pipei" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

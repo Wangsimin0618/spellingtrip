@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMineHeader"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivUserHeader"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="98dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_toRightOf="@+id/ivUserHeader"
+        android:id="@+id/rvUserTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvUserCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/ivUserHeader"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/articleTitle"
+        android:text=""/>
+    <ImageView
+        android:id="@+id/ivUserSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvUserCity"
+        android:layout_below="@+id/ivUserHeader"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:src="@mipmap/tab_nan"/>
+    <TextView
+        android:id="@+id/tvUserQianName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_below="@+id/tvUserCity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/articleTitle"
+        android:text=""/>
+    <TextView
+        android:layout_below="@+id/tvUserQianName"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="22dp"
+        android:background="@color/searchbg"/>
+
+</RelativeLayout>

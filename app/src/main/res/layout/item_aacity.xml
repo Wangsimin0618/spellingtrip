@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemAA"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlItemaacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp">
+
+        <com.spellingtrip.example.view.ShapedImageView
+            android:id="@+id/ivItemAAUserHeader"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_marginRight="7dp"
+            android:src="@mipmap/ic_launcher"
+            test:shape_mode="circle" />
+
+        <TextView
+            android:id="@+id/tvItemAAUserNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivItemAAUserHeader"
+            android:text=""
+            android:layout_marginRight="6dp"
+            android:textColor="@color/history_text"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/tvItemAAUserVIP"
+            android:layout_width="30dp"
+            android:layout_height="13dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tvItemAAUserNick"
+            android:src="@mipmap/vip_logo"/>
+        <ImageView
+            android:id="@+id/tvItemAAUserShiMing"
+            android:layout_width="36dp"
+            android:layout_height="13dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:layout_toRightOf="@+id/tvItemAAUserVIP"
+            android:src="@mipmap/isshiming"/>
+        <ImageView
+            android:id="@+id/tvItemAAUserActivity"
+            android:layout_width="36dp"
+            android:layout_height="13dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tvItemAAUserShiMing"
+            android:src="@mipmap/activitylabel"/>
+
+        <RelativeLayout
+            android:id="@+id/ivItemAASex"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvItemAAUserNick"
+            android:background="@drawable/argsexjieban_shape"
+            android:layout_toRightOf="@+id/ivItemAAUserHeader">
+            <TextView
+                android:id="@+id/tvItemAASex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="♂"
+                android:textColor="@color/main_bg"
+                android:textSize="9sp" />
+            <TextView
+                android:layout_toRightOf="@+id/tvItemAASex"
+                android:id="@+id/tvItemAAArg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="3dp"
+                android:text=""
+                android:textSize="9sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/main_bg"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivItemAAcityDetel"
+            android:layout_width="20dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/lajitong"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvActivityWeiZhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/ivWeizhi"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/history_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvActivityTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/history_text"
+        android:textSize="15sp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tvActivityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="17dp"/>
+
+
+    <TextView
+        android:id="@+id/tvActivityContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textColor="@color/text79"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivActivityImg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/text5f6" />
+</LinearLayout>

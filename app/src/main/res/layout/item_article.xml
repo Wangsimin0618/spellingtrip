@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llArticle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_shape"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvArticleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:ellipsize="end"
+                android:textColor="@color/text1f"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvArticleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvArticleTitle"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/articleTitle"
+                android:background="@color/main_bg"
+                android:textStyle=""
+               android:lines="1"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivArticlePhoto"
+            android:layout_below="@+id/tvArticleContent"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+</LinearLayout>

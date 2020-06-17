@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvChooseLabelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/labelsel_shape"
+        android:button="@drawable/color_shape"
+        android:gravity="center"
+        android:textColor="@color/main_bg"
+        android:textSize="13sp"
+        android:text=""/>
+    <ImageView
+        android:id="@+id/ivDetelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/deletel"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+    <include layout="@layout/comment_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/searchbg"/>
+    <RelativeLayout
+        android:id="@+id/rlUpDataPass"
+        style="@style/SetInfoReLayout">
+        <TextView
+            android:text="修改密码"
+            style="@style/SetInfoTextView"
+            />
+        <ImageView
+            style="@style/SetInfoImage"
+            />
+        <TextView
+            style="@style/SetInfoLink"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlRenZheng"
+        style="@style/SetInfoReLayout">
+        <TextView
+            android:text="实名认证"
+            style="@style/SetInfoTextView"
+            />
+        <ImageView
+            style="@style/SetInfoImage"
+            />
+        <TextView
+            android:id="@+id/tvTishi"
+            android:text=""
+            android:textSize="13sp"
+            style="@style/SetInfoTextView"
+            android:textColor="@color/logineNor_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/searchbg"/>
+</LinearLayout>

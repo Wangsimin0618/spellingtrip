@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/comment_title" />
+
+        <TextView
+            android:id="@+id/tvEditInfoFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/articleTitle"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEditInfoNick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/search"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etInfoNick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/search"
+            android:hint="请输入昵称"
+            android:textColor="@color/search_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivInfoDeltel"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:src="@mipmap/deletel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEditInfoQianName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/search"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/etInfoQianName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/search"
+            android:hint=""
+            android:maxLength="35"
+            android:paddingLeft="15dp"
+            android:textColor="@color/search_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:text="35"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#26E0C4</color>
+    <color name="main_bg">#ffffff</color>
+    <color name="search">#F9F5F5</color>
+    <color name="searchbg">#E7E7E7</color>
+    <color name="textSelColor">#55D673</color>
+    <color name="textNorColor">#212121</color>
+    <color name="articleTitle">#2A2A2A</color>
+    <color name="search_text">#A4A4A4</color>
+    <color name="history_text">#0E0E0E</color>
+    <color name="logine_text">#1A1A1A</color>
+    <color name="logineNor_text">#A1A1A1</color>
+    <color name="phoneSel_text">#5c9acb</color>
+    <color name="text79">#797979</color>
+    <color name="text58">#585858</color>
+    <color name="textfb">#fbfbfb</color>
+    <color name="text7e">#7e7e7e</color>
+    <color name="text40">#404040</color>
+    <color name="text1f">#1F1F1F</color>
+    <color name="textf1">#F1F1F1</color>
+    <color name="image_selector_bg_bar">#90000000</color>
+    <color name="image_selector_red">#FF0000</color>
+    <color name="image_selector_orange">#FF9800</color>
+    <color name="image_selector_yellow">#FFEB3B</color>
+    <color name="textb3">#62D8B3</color>
+    <color name="textDC">#DCDCDC</color>
+    <color name="text5f6">#fff0f5f6</color>
+    <color name="textb7">#B760F6</color>
+    <color name="textF0F5">#949494</color>
+    <color name="text37c">#37C1D5</color>
+    <color name="textf794">#F79494</color>
+    <color name="text68">#68C6D5</color>
+    <color name="textedf1">#EDF1F3FF</color>
+    <color name="textabc0c">#ABC0C8</color>
+    <color name="textffe5">#ffe5e5</color>
+    <color name="textff68">#FF6868</color>
+    <color name="textb1">#B1AEAE</color>
+    <color name="text17">#17171B</color>
+    <color name="textff3f">#fff3f6f8</color>
+    <color name="textff7992">#ffff7992</color>
+    <color name="texy6ee">#6ee6e5</color>
+    <color name="buyvip">#333333</color>
+    <color name="buyvips">#666666</color>
+    <color name="buyvip_money">#F20C0C</color>
+    <color name="play_color">#020002</color>
+    <color name="location_gray">#999999</color>
+    <color name="city_view">#fff8f8f8</color>
+    <color name="hotseach">#00CFDE</color>
+
+
+</resources>

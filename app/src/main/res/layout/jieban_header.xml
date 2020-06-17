@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="8dp" >
+            <com.spellingtrip.example.view.ShapedImageView
+                android:id="@+id/ivJieBanUserHeader"
+                app:shape_mode="circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/jiebansex"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvJieBanUserNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/head"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/ivJieBanSex"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tvJieBanUserNick"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/vip"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/llJieBanArgSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJieBanUserNick"
+            android:layout_toRightOf="@+id/head">
+
+            <TextView
+                android:id="@+id/tvJieBanSexArg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起始地点"
+        android:textColor="#999999"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/depart"/>
+        <TextView
+            android:id="@+id/tvJiebanStartArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/arrows"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/destination"
+            />
+        <TextView
+            android:id="@+id/tvJiebanToArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="行程时间"
+            android:textStyle="bold"
+            android:textColor="#999999"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+        <TextView
+            android:id="@+id/tvJiebanTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/history_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="24dp"
+        android:background="#F8F8F8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程标签"
+            android:textStyle="bold"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/jiebanTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程描述"
+            android:textStyle="bold"
+            android:textColor="#999999"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tvJiebanContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="24dp"
+        android:background="#fff8f8f8" />
+    <LinearLayout
+        android:id="@+id/llJieBanLive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:id="@+id/tvJieBanLiveNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜欢·"
+            android:textStyle="bold"
+            android:textColor="@color/history_text"
+            android:textSize="16sp" />
+        <com.spellingtrip.example.view.ScrollGridView
+            android:id="@+id/gvJieBanLives"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:scrollbars="none"
+            android:horizontalSpacing="5dp"
+            android:numColumns="9"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvJIeBanHeaderCommentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评价"
+        android:layout_marginTop="24dp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+    </LinearLayout>
+

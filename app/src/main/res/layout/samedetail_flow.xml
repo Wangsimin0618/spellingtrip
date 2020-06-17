@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/flow_view"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:id="@+id/flowname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆"
+            android:textColor="#ff333333"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/flowcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="上午游玩解放碑、磁器口、打卡网红奶茶店，下午打卡洪崖洞，晚上吃火锅。"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/flowdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020.04.28"
+            android:textColor="#ff999999"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/flow_view"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/flowyuan"/>
+    <com.spellingtrip.example.view.VerticalDashView
+        android:id="@+id/flow_xx"
+        android:layout_width="2dp"
+        android:layout_below="@id/flow_view"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@id/view"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/right"
+        android:background="@color/main_bg"/>
+
+
+</RelativeLayout>

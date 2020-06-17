@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">拼旅行</string>
+
+    <string name="image_selector_preview">预览</string>
+    <string name="image_selector_back">返回</string>
+    <string name="image_selector_authorization_failed">权限获取失败</string>
+    <string name="image_selector_limit_of_img_error">你最多只能选择 %1$d 张照片</string>
+    <string name="emojicon_test_name">示例</string>
+    <string name="title_live">互动视频</string>
+    <string name="recall">撤回</string>
+    <string name="stop_record">停止录制</string>
+    <string name="switch_camera">切换摄像头</string>
+    <string name="capture_image">抓取图片</string>
+    <string name="call_version_inconsistent">通话协议版本不一致</string>
+    <string name="msg_recall_by_self">您撤回了一条消息</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="msg_recall_by_user">%1$s 撤回了一条消息</string>
+    <string name="is_quit_the_chat_room">是否退出聊天室</string>
+    <string name="chat_room_id">聊天室ID</string>
+    <string name="The_new_chat_room">创建聊天室</string>
+    <string name="chat_room_name">聊天室名称</string>
+    <string name="messages_are_empty">聊天记录已被清空</string>
+    <string name="group_announcement">公告</string>
+    <string name="is_modify_the_group_description">正在修改群详情..</string>
+    <string name="Modify_the_group_name_successful">修改群名称成功</string>
+    <string name="Modify_the_group_description_successful">修改群详情成功</string>
+    <string name="Modify_the_group_extension_successful">修改群扩展成功</string>
+    <string name="change_the_group_description_failed_please">修改群详情失败，请检查网络或稍后重试</string>
+    <string name="change_the_group_extension_failed_please">修改群扩展失败，请检查网络或稍后重试</string>
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="invite_join_group">邀请加入群聊</string>
+    <string name="network_unstable">网络不稳定</string>
+    <string name="no_call_data">没有通话数据</string>
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享取消</string>
+    <string name="errcode_deny">分享被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">分享返回</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

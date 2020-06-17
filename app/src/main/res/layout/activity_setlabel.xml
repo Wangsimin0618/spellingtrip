@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gvChooseLabel"
+        android:layout_width="match_parent"
+        android:numColumns="4"
+       android:layout_marginTop="70dp"
+        android:background="#F9FBFC"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="9dp"
+        android:horizontalSpacing="10dp"
+        android:layout_height="216dp"></GridView>
+
+ <com.spellingtrip.example.sticky.StickyListHeadersListView
+     android:id="@+id/lvSetLabel"
+     android:layout_below="@+id/gvChooseLabel"
+     android:layout_width="match_parent"
+     android:paddingBottom="30dp"
+     android:background="#F1F4F6"
+     android:layout_height="wrap_content"
+     />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/comment_title" />
+        <TextView
+            android:id="@+id/tvSetLabelFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/articleTitle"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

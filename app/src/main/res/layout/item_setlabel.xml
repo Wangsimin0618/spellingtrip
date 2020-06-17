@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tvLabelTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
+        android:text=""
+        android:textColor="@color/articleTitle"
+        android:paddingLeft="30px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"/>
+    <com.spellingtrip.example.view.ScrollGridView
+
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@color/searchbg"
+        android:layout_margin="30px"
+        android:horizontalSpacing="24px"
+        android:verticalSpacing="18px"
+        android:numColumns="4"
+        android:layout_height="wrap_content"></com.spellingtrip.example.view.ScrollGridView>
+</LinearLayout>

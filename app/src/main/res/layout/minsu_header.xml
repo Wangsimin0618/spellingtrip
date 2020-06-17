@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+        <com.youth.banner.Banner
+            android:id="@+id/homeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/mRg_zhishiqi"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+    <RadioGroup
+        android:id="@+id/tab_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp">
+    <RadioButton
+        android:id="@+id/tab_hotcity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/hot_city"
+        android:gravity="center_horizontal|bottom"
+        android:text="热门城市"/>
+
+    <RadioButton
+        android:id="@+id/tab_sameactvity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/same_activity"
+        android:gravity="center_horizontal|bottom"
+        android:text="同城活动" />
+
+    <RadioButton
+        android:id="@+id/tab_hotpath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/hot_path"
+        android:gravity="center_horizontal|bottom"
+        android:text="热门路线"/>
+
+    <RadioButton
+        android:id="@+id/tab_merchantsalliance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/merchants_alliance"
+        android:gravity="center_horizontal|bottom"
+        android:text="商家联盟"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#F8F8F8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:id="@+id/navigation_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新推荐"
+            android:textSize="22sp"
+            android:drawableBottom="@mipmap/blue_link"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/navigation_Hottogether"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门结伴"
+            android:background="@color/common_bg"
+            android:textSize="16sp"
+            android:drawableBottom="@mipmap/blue_link"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/logine_text"/>
+        <TextView
+            android:id="@+id/navigation_VIPscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP筛选"
+            android:background="@color/common_bg"
+            android:textSize="16sp"
+            android:drawableBottom="@mipmap/blue_link"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/logine_text"/>
+    </LinearLayout>
+
+
+<!--    <android.support.design.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <android.support.design.widget.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:background="#fff">-->
+<!--    <android.support.design.widget.TabLayout-->
+<!--        android:id="@+id/hometableyout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="28dp"-->
+<!--        app:tabIndicatorHeight="0dp"-->
+<!--        app:tabBackground="@drawable/tab_selector"-->
+<!--        app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways"-->
+<!--        android:layout_marginTop="24dp"/>-->
+<!--    </android.support.design.widget.AppBarLayout>-->
+<!--    </android.support.design.widget.CoordinatorLayout>-->
+
+</LinearLayout>

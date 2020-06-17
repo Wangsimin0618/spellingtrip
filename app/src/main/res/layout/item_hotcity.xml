@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemHotCity"
+    android:layout_width="49dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.spellingtrip.example.view.ShapedImageView
+        android:id="@+id/ivItemCityLogo"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        app:shape_mode="circle"
+        />
+    <TextView
+        android:id="@+id/tvItemCityName"
+        android:layout_width="49dp"
+        android:text=""
+        android:lines="1"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        android:textColor="@color/articleTitle"
+        android:layout_height="wrap_content" />
+</LinearLayout>

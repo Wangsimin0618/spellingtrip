@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relayout"
+    android:layout_marginLeft="-5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.spellingtrip.example.view.ShapedImageView
+        android:id="@+id/sameitem_head"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_width="20dp"
+        app:shape_mode="circle"
+        android:layout_height="20dp"/>
+</RelativeLayout>

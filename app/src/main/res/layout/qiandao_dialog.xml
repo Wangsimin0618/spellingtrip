@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:paddingBottom="23dp"
+        android:paddingTop="23dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/tvQianDaotitle"
+            android:src="@mipmap/qiandao_left" />
+
+        <TextView
+            android:id="@+id/tvQianDaotitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="每日签到"
+            android:textColor="@color/history_text"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivQianDaoTiShi"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/qiandao_right" />
+
+        <!--<GridView
+           android:id="@+id/qiandaoGridView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tvQianDaotitle"
+           android:layout_margin="13dp"
+           android:layout_marginTop="45dp"
+           android:horizontalSpacing="3dp"
+           android:numColumns="4"
+           android:scrollbars="none"
+           android:stretchMode="columnWidth"
+           android:verticalSpacing="10dp" />-->
+      <LinearLayout
+           android:id="@+id/llQianDaoOne"
+           android:layout_below="@+id/tvQianDaotitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="45dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="12dp"
+           android:layout_marginBottom="10dp">
+           <ImageView
+               android:id="@+id/ivSignOne"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+           <ImageView
+               android:id="@+id/ivSignTwo"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_height="100dp"
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:src="@mipmap/qiandaonor"/>
+           <ImageView
+               android:id="@+id/ivSignSan"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_marginRight="2dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+           <ImageView
+               android:id="@+id/ivSignFor"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/llQianDaoTwo"
+           android:layout_below="@+id/llQianDaoOne"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="12dp"
+           android:layout_marginBottom="35dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="0.5"
+               android:layout_height="100dp" />
+
+           <ImageView
+               android:id="@+id/ivSignFive"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+           <ImageView
+               android:id="@+id/ivSignSex"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+           <ImageView
+               android:id="@+id/ivSignSeven"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:scaleType="fitXY"
+               android:layout_height="100dp"
+               android:src="@mipmap/qiandaonor"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="0.5"
+               android:layout_height="100dp" />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llQianDaoTwo"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="我的积分："
+                android:textColor="@color/history_text" />
+
+            <TextView
+                android:id="@+id/tvQianDaoNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/image_selector_red" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

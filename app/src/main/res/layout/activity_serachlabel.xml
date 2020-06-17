@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:paddingTop="52dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/seach_cancel">
+
+            <AutoCompleteTextView
+                android:id="@+id/seach_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/seachgray"
+                android:background="@drawable/search_shape"
+                android:completionThreshold="1"
+                android:drawablePadding="5dp"
+                android:dropDownVerticalOffset="1.0dip"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:hint="请输入活动标签"
+                android:imeOptions="actionSearch"
+                android:inputType="text|textAutoComplete"
+                android:maxLength="20"
+                android:paddingLeft="14dp"
+                android:singleLine="true"
+                android:textColor="#979EA9"
+                android:textColorHint="#979EA9"
+                android:textSize="14.0sp"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/seach_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="17dp"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="历史记录"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/buyvip"/>
+
+
+        <ImageView
+            android:id="@+id/seach_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/deletegray"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/label_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/city_view"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="热搜"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/buyvip"/>
+
+        <ImageView
+            android:id="@+id/city_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/refresh"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hot_seach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+</LinearLayout>

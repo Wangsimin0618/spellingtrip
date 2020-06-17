@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/tvItemBlackHeader"
+        android:layout_width="45dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/tvItemBlackNick"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/logine_text"
+        android:layout_toRightOf="@+id/tvItemBlackHeader"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移除"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        android:textColor="@color/articleTitle"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

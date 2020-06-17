@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlPublishBottom"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+            android:id="@+id/publishVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvChongpai"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/chongpai_shape"
+            android:text="重拍"
+            android:textSize="16sp"
+
+            />
+        <TextView
+            android:id="@+id/tvPublishRight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:textColor="@color/main_bg"
+            android:textSize="16sp"
+            android:background="@drawable/fabu_shape"
+            android:text="发布"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/biaojibg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvVideoPublishLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:drawableLeft="@mipmap/biaoji"
+                android:text="选择位置"
+                android:textSize="13sp"
+                android:textColor="@color/main_bg"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/etVideoContent"
+        android:layout_width="match_parent"
+        android:hint="为视频添加一个标题吧"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="19sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/main_bg"
+        android:background="@color/transparent"
+        android:paddingLeft="20dp"
+        android:textColor="@color/main_bg"/>
+    <TextView
+        android:layout_below="@+id/etVideoContent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/searchbg"/>
+</RelativeLayout>

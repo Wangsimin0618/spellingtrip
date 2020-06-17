@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemArticle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_shape"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemArticleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:singleLine="true"
+                android:layout_marginTop="40px"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                android:ellipsize="end"
+                android:textColor="@color/text1f"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/tvItemArticleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/articleTitle"
+                android:background="@color/main_bg"
+                android:textStyle=""
+                android:lines="1"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivItemArticlePhoto"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="380px"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+
+</LinearLayout>

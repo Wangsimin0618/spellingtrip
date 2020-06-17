@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="33dp"
+    android:layout_height="33dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.spellingtrip.example.view.ShapedImageView
+        android:id="@+id/sivItemLiveheader"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        app:shape_mode="circle"
+        android:layout_width="33dp"
+        android:layout_height="33dp" />
+    <TextView
+        android:id="@+id/tvItemLiveYuNumber"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:textSize="9sp"
+        android:text=""
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/libebg_shape"
+        android:textColor="@color/text5f6"/>
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/comment_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlUserheader"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/main_bg"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="个人头像"
+                    android:textColor="@color/articleTitle"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivUserinfoHeader"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/ivimgrifgt"
+                  />
+
+                <TextView
+                    android:id="@+id/ivimgrifgt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@mipmap/right" />
+
+                <TextView style="@style/SetInfoLink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUserInfoNick"
+                style="@style/SetInfoReLayout">
+
+                <TextView
+                    style="@style/SetInfoTextView"
+                    android:text="昵称" />
+
+                <ImageView
+                    android:id="@+id/iv01"
+                    style="@style/SetInfoImage" />
+
+                <TextView
+                    android:id="@+id/tvUserInfoNick"
+                    style="@style/SetInfoTextView"
+                    android:layout_toLeftOf="@+id/iv01"
+                    android:layout_marginRight="10dp"
+                    android:text="游友"
+                    android:textSize="13sp" />
+
+                <TextView style="@style/SetInfoLink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUserInfoSex"
+                style="@style/SetInfoReLayout">
+
+                <TextView
+                    style="@style/SetInfoTextView"
+                    android:text="性别" />
+
+                <ImageView
+                    android:id="@+id/iv02"
+                    style="@style/SetInfoImage" />
+
+                <TextView
+                    android:id="@+id/tvUserInfoSex"
+                    style="@style/SetInfoTextView"
+                    android:layout_toLeftOf="@+id/iv02"
+                    android:layout_marginRight="10dp"
+                    android:text="请选择性别"
+                    android:textSize="13sp" />
+
+                <TextView style="@style/SetInfoLink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUserInfoDirthDay"
+                style="@style/SetInfoReLayout">
+
+                <TextView
+                    style="@style/SetInfoTextView"
+                    android:text="生日" />
+
+                <ImageView
+                    android:id="@+id/iv03"
+                    style="@style/SetInfoImage" />
+
+                <TextView
+                    android:id="@+id/tvUserInfoDirthDay"
+                    style="@style/SetInfoTextView"
+                    android:layout_toLeftOf="@+id/iv03"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="13sp" />
+                <TextView style="@style/SetInfoLink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUserInfoCity"
+                style="@style/SetInfoReLayout">
+
+                <TextView
+                    style="@style/SetInfoTextView"
+                    android:text="地区" />
+
+                <ImageView
+                    android:id="@+id/iv04"
+                    style="@style/SetInfoImage" />
+
+                <TextView
+                    android:id="@+id/tvUserInfoCity"
+                    style="@style/SetInfoTextView"
+                    android:layout_toLeftOf="@+id/iv04"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textSize="13sp" />
+
+                <TextView style="@style/SetInfoLink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUserInfoQianName"
+                style="@style/SetInfoReLayout">
+
+                <TextView
+                    style="@style/SetInfoTextView"
+                    android:text="个性签名" />
+
+                <ImageView
+                    android:id="@+id/iv05"
+                    style="@style/SetInfoImage" />
+
+                <TextView
+                    android:id="@+id/tvUserInfoQianName"
+                    style="@style/SetInfoTextView"
+                    android:layout_toLeftOf="@+id/iv05"
+                    android:layout_marginRight="10dp"
+                    android:text="设置个性签名"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <TextView style="@style/SetInfoLink" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

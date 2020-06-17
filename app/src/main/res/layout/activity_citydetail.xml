@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_toplan"
+        android:background="@color/main_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCityGuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/link_textb3_shape"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:text="管理"
+                android:textColor="@color/textb3"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <com.spellingtrip.example.view.ScrollGridView
+                android:id="@+id/gvCityPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:horizontalSpacing="5dp"
+                android:minHeight="80dp"
+                android:numColumns="6"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvCityTime"
+                    style="@style/ComActivityLeft"
+                    android:text="时间：" />
+
+                <TextView
+                    android:id="@+id/rlCityDetailTime"
+                    style="@style/ComActivityRight"
+                    android:layout_toRightOf="@+id/tvCityTime"
+                    android:background="@drawable/link_text79_shape"
+                    android:text="xxx" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvCityType"
+                    style="@style/ComActivityLeft"
+                    android:text="活动：" />
+
+                <TextView
+                    android:id="@+id/rlDetailType"
+                    style="@style/ComActivityRight"
+                    android:layout_toRightOf="@+id/tvCityType"
+                    android:background="@drawable/link_text79_shape"
+                    android:text="xxxx" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvCityLocation"
+                    style="@style/ComActivityLeft"
+                    android:text="地点：" />
+
+                <TextView
+                    android:id="@+id/rlCityDetailLocation"
+                    style="@style/ComActivityRight"
+                    android:layout_toRightOf="@+id/tvCityLocation"
+                    android:background="@drawable/link_text79_shape"
+                    android:paddingRight="10dp"
+                    android:text="xxxxxxx" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvCityMoney"
+                    style="@style/ComActivityLeft"
+                    android:text="人均：" />
+
+                <TextView
+                    android:id="@+id/rlDetailMoney"
+                    style="@style/ComActivityRight"
+                    android:layout_toRightOf="@+id/tvCityMoney"
+                    android:background="@drawable/link_text79_shape"
+                    android:text="000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCityPayType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="线下AA"
+                android:textColor="@color/textb3"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvCityPeople"
+                    style="@style/ComActivityLeft"
+                    android:text="人数：" />
+
+                <TextView
+                    android:id="@+id/rlDetailPeople"
+                    style="@style/ComActivityRight"
+                    android:layout_toRightOf="@+id/tvCityPeople"
+                    android:background="@drawable/link_text79_shape"
+                    android:text="xxxx" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvCityAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/link_textb3_shape"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/textb3"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ComActivityRL"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvActivityDesc"
+                    style="@style/ComActivityLeft"
+                    android:layout_centerVertical="false"
+                    android:text="详情：" />
+
+                <TextView
+                    android:id="@+id/tvCityActivityDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_toRightOf="@+id/tvActivityDesc"
+                    android:background="@drawable/link_text79_detail_shape"
+                    android:gravity="left"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/logineNor_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <com.spellingtrip.example.view.MaxRecyclerView
+                android:id="@+id/lvCityImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/main_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCityStartActivity"
+                    style="@style/CityDetail"
+                    android:text="活动开始"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityFinish"
+                    style="@style/CityDetail"
+                    android:text="活动已结束" />
+
+                <TextView
+                    android:id="@+id/tvCityInChat"
+                    style="@style/CityDetail"
+                    android:text="进入群聊" />
+
+                <TextView
+                    android:id="@+id/tvCityEndActivity"
+                    style="@style/CityDetail"
+                    android:text="结束活动"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityCollect"
+                    style="@style/CityDetail"
+                    android:text="收藏"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityQunZhuChat"
+                    style="@style/CityDetail"
+                    android:text="联系群主"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityOutActivity"
+                    style="@style/CityDetail"
+                    android:text="退出活动"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityLoading"
+                    style="@style/CityDetail"
+                    android:text="活动已开始"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvCityActivityStop"
+                    style="@style/CityDetail"
+                    android:text="活动结束"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/comment_title" />
+
+</RelativeLayout>

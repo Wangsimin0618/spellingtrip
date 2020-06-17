@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:paddingTop="52dp">
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="36dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    <RelativeLayout
+        android:id="@+id/llCityPickSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/city_cancel">
+
+        <AutoCompleteTextView
+            android:id="@+id/keyWordCityPick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/seachgray"
+            android:background="@drawable/search_shape"
+            android:completionThreshold="1"
+            android:drawablePadding="5dp"
+            android:dropDownVerticalOffset="1.0dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="请输入城市名称"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:textColor="#979EA9"
+            android:textColorHint="#979EA9"
+            android:textSize="14.0sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/city_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="取消"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/buyvips"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+</RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前位置"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/buyvip"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingRight="16dp"/>
+
+    <TextView
+        android:id="@+id/city_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/location_gray"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/location_gray"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/city_view"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"/>
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        indexBar_layout_width="40dp"
+        indexBar_selectedTextColor="@color/logineNor_text"
+        indexBar_textSize="14sp"
+        indexBar_textSpace="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+</LinearLayout>

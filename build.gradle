@@ -1,0 +1,74 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven {
+            url "https://raw.githubusercontent.com/HyphenateInc/Hyphenate-SDKAndroid/master/repository"
+        }
+      //  maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.3.1'
+       // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+      //  classpath 'com.novoda:bintray-release:0.8.1'
+        // Google Firebase cloud messaging
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        classpath 'com.google.gms:google-services:3.1.1'
+    }
+}
+
+allprojects {
+    repositories {
+        // 支付宝 SDK AAR 包所需的配置
+      /*  flatDir {
+            dirs 'libs'
+        }*/
+        google()
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/cjt/maven'
+        }
+        maven { url 'http://developer.huawei.com/repo'}
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+}
+
+if (JavaVersion.current().isJava8Compatible()) {
+    allprojects {
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+        }
+    }
+}
+ext{
+    if(!project.hasProperty('isAarRelease')){
+        isAarRelease = false;
+    }
+    if(!project.hasProperty('isLite')){
+        isLite = false;
+    }
+    if(!project.hasProperty('sdkVersion')){
+        sdkVersion = '3.2.3'
+    }
+    if(!project.hasProperty('isTravis')) {
+        isTravis = false
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+

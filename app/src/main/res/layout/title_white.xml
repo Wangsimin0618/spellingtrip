@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.linwg.org.lib.LCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlusertitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/main_bg"
+    app:cornerRadius="0dp"
+    app:shadowStartAlpha="15"
+    android:layout_marginLeft="-5dp"
+    android:layout_marginRight="-5dp"
+    app:bottomShadowHeight="15dp"
+    android:layout_marginTop="-8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_Userleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fhwhite" />
+
+        <TextView
+            android:id="@+id/tv_Userlantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/articleTitle"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_lantitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Userlantitle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/ivTitleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/morewhite"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+
+</www.linwg.org.lib.LCardView>

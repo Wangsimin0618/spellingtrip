@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvDetailList"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_below="@+id/tv_toplan"
+        android:dividerHeight="1dp"
+        android:background="@color/search"
+        android:layout_height="match_parent"></ListView>
+    <include layout="@layout/comment_title"/>
+</RelativeLayout>

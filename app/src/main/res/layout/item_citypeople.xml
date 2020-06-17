@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/tvItemCityPeopleHeader"
+        android:layout_width="50dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tvItemCityPeopleNick"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:text=""
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/logine_text"
+        android:layout_toRightOf="@+id/tvItemCityPeopleHeader"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tvItemCityPeopleRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移除"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="13sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/homecollect_shape"
+        android:textColor="@color/articleTitle"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

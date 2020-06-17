@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/rlItemAACity"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivItemActivityImg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        />
+    <TextView
+        android:id="@+id/tvItemActivityNick"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:maxLength="7"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/articleTitle"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/ivItemActivityImg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/activity"/>
+    <TextView
+        android:id="@+id/tvItemActivityTime"
+        android:layout_below="@+id/ivItemActivityImg"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/articleTitle"
+        android:text="时间：2019年4月24日  9:30"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemActivityLocation"
+        android:layout_below="@+id/tvItemActivityTime"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:layout_marginRight="5dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/pin_biaoji"
+        android:textColor="@color/articleTitle"
+        android:text=""
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemActivityType"
+        android:layout_below="@+id/tvItemActivityLocation"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/articleTitle"
+        android:text="活动："
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemActivityPeople"
+        android:layout_below="@+id/tvItemActivityType"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/articleTitle"
+        android:text="团队成员：1/7"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemActivityPayType"
+        android:layout_below="@+id/tvItemActivityPeople"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/articleTitle"
+        android:text="线下AA"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvItemActivityLink"
+        android:layout_below="@+id/tvItemActivityPayType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xuxian_shape"/>
+    <TextView
+        android:id="@+id/tvItemActivityStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/tvItemActivityLink"
+        android:text="距开始：1天4小时"
+        android:visibility="gone"
+        android:textColor="@color/textb3"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/tvItemActivityStartApplay"
+        android:layout_width="84dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tvItemActivityLink"
+        android:text="活动开始"
+        android:background="@drawable/homeitem_shape"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/textb3"
+        android:textSize="13sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvItemActivityJIeSan"
+        android:layout_toLeftOf="@+id/tvItemActivityStartApplay"
+        android:layout_width="84dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_below="@+id/tvItemActivityLink"
+        android:text="解散活动"
+        android:background="@drawable/homecollect_shape"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/articleTitle"
+        android:textSize="13sp"
+        android:gravity="center"
+        />
+</RelativeLayout>

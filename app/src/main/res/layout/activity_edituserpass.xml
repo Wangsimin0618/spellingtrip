@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="17dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="43dp">
+
+        <ImageView
+            android:id="@+id/ivEditUserPassBack"
+            android:layout_width="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/nav_fanhui" />
+
+        <TextView
+            android:id="@+id/tvEditPsssPass"
+            android:layout_toRightOf="@+id/ivEditUserPassBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="@color/history_text"
+            android:textSize="29sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEditPsssPass"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="拼旅行，给你不一样的旅行体验"
+            android:textColor="@color/history_text"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_above="@+id/tvEditUserPassLink"
+            android:background="@drawable/loginnor_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="19dp"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/history_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/textabc0c" />
+
+            <EditText
+                android:id="@+id/etEditUserPassPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/textedf1"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:textColor="@color/history_text"
+                android:textColorHint="@color/textabc0c"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEditUserPassLink"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:background="@color/textDC"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvEditUserPassLogineSel"
+            style="@style/LogineShapeStyle"
+            android:layout_below="@+id/tvEditUserPassLink"
+            android:background="@drawable/loginnor_shape"
+            android:text="下一步"
+            android:textColor="@color/textabc0c"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvEditUserPassLogineSel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="“人生若只如初见、我还在这里等你;”"
+                android:textColor="@color/textabc0c"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并同意"
+                    android:textColor="@color/text40"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvEditUserPassLogineYinSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拼旅行用户协议和隐私政策"
+                    android:textColor="@color/text68"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

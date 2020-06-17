@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/samegroupsbg"
+        android:paddingBottom="20dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入不大于10个字的群聊名称"
+        android:textColor="#ff333333"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/edit_groupname"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="活动类型"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/groupchat_bg"
+        android:textColorHint="#999999"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="113dp"
+        android:layout_height="36dp"
+        android:text="确定"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/surebutton_bg"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/close_gray"
+        />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="请选择支付方式"
+            android:textSize="18sp"
+            android:textColor="@color/buyvip"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/pay_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WachalineCz"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wechat_play" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="微信支付"
+            android:textSize="16sp"
+            android:textColor="@color/play_color" />
+
+        <ImageView
+            android:id="@+id/wacha_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selected" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/search" />
+        <LinearLayout
+            android:id="@+id/lineCzAlipay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/main_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/alipay_play" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="支付宝支付"
+                android:textSize="16sp"
+                android:textColor="@color/play_color" />
+
+            <ImageView
+                android:id="@+id/alipay_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/unselected"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/search"
+            android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/pay_button"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="确认支付"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="27dp"
+        android:textSize="16sp"
+        android:layout_marginTop="57dp"/>
+</LinearLayout>

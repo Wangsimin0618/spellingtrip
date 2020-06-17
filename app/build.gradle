@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.spellingtrip.example"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 6
+        versionName "1.9.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        /*  packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }*/
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        manifestPlaceholders = [
+                JPUSH_APPKEY : "e01d8b4988c3df7e0cc8108b",//值来自开发者平台取得的AppKey
+                JPUSH_CHANNEL: "d9567c4aa919175415c49c8b",
+        ]
+    }
+    signingConfigs {
+        myConfig {
+            storeFile file('E:\\日常代码\\spellingtrip\\spellingtrip\\spelling.jks')
+            storePassword "spelling2019"
+            keyAlias "spelling"
+            keyPassword "spelling2019"
+        }
+        myConfigDebug {
+            storeFile file('E:\\日常代码\\spellingtrip\\spellingtrip\\spelling.jks')
+            storePassword "spelling2019"
+            keyAlias "spelling"
+            keyPassword "spelling2019"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        incremental false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.github.guoxiaoxing:phoenix:1.0.15'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation files('libs/jsoup-1.8.1.jar')
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'org.litepal.android:java:3.0.0'
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    implementation 'me.yokeyword:indexablerecyclerview:1.3.0'
+    implementation project(':jcvideoplayer-lib')
+    implementation project(':camera')
+    implementation project(':calendar')
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation 'com.github.guoxiaoxing:phoenix:1.0.15'
+    implementation 'com.parse:parse-android:1.13.1'
+    implementation 'com.google.firebase:firebase-messaging:11.4.0'
+    implementation files('libs/AMap_Location_V3.6.1_20171012.jar')
+    implementation files('libs/AMap3DMap_6.2.0_AMapNavi_6.1.0_20180427.jar')
+    implementation files('libs/AMap_Search_V6.1.0_20180330.jar')
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'org.linwg1988:lcardview:1.4.2'
+    implementation 'com.j256.ormlite:ormlite-android:5.0'
+    implementation project(':silicompressor')
+    implementation(name: 'openDefault-4.3.1', ext: 'aar')
+    // implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //implementation files('libs/alipaySdk-20170922.jar')
+    // 支付宝 SDK AAR 包所需的配置
+    implementation(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
+    implementation files('libs/open_sdk_r53890096d0e731f134f448c1286e48c2043b484b_lite.jar')
+    implementation files('libs/jcore-android-2.2.2.jar')
+    implementation files('libs/jpush-android-3.4.0.jar')
+    implementation project(path: ':easeui')
+}

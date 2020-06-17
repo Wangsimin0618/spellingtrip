@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:id="@+id/llChoosePintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:orientation="vertical">
+            <EditText
+                android:id="@+id/etHomeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:background="@drawable/search_shape"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/search"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:hint=" 请选择活动内容"
+                android:textSize="12sp" />
+        <GridView
+            android:layout_width="match_parent"
+            android:numColumns="5"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_height="50dp"></GridView>
+
+    </LinearLayout>
+    <ListView
+        android:layout_below="@+id/llChoosePintop"
+        android:id="@+id/activityRecyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/main_bg"
+        android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/comment_title"/>
+        <TextView
+            android:id="@+id/tvChooseFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="完成"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/history_text"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
